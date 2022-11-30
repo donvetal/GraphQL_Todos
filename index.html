@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GraphQL Client</title>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+</head>
+<body class="container">
+<h1 class="display-1 mb-5">GraphQL Todos</h1>
+<div class="row mb-5">
+    <div class="col-md-6">
+        <h3>Добавление задачи</h3>
+        <form name="addtask">
+            <div class="input-group">
+                <input type="text" name="taskname" class="form-control" />
+                <input type="submit" value="Добавить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <h3>Поиск задачи</h3>
+        <form name="findtask">
+            <div class="input-group">
+                <input type="text" name="searchname" class="form-control" />
+                <input type="submit" value="Найти" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr class="my-2" />
+
+<ul class="list-group" id="todos"></ul>
+
+<script src="./src/index.js"></script>
+</body>
+</html>
